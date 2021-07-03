@@ -1,16 +1,15 @@
 import React from "react";
-import { BrwoserRouter as Router, Switch, Route } from "react-router-dom";
-import { map } from "lodash";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import configRouting from "./configRouting";
 
-function Routing(props) {
+function Routing() {
   return (
     <Router>
       <Switch>
-        {map(configRouting, (route, index) => {
-          <Route key={index} path={route.path} exact={route.exact}>
-            <route.page />
-          </Route>
+        {configRouting.map((routing, index) => {
+          return (
+            <Route key={index} exact path={routing.path} component={routing.page}/>
+          );
         })}
       </Switch>
     </Router>

@@ -1,13 +1,14 @@
-import React from 'react';
-import './App.css';
-import Home from '../page/Home'
+import React from "react";
+import "./App.css";
+import Home from "../page/Home";
 
 
 function App() {
   return (
-    <div>
+    <React.Fragment>
       <Home />
-    </div>
+    </React.Fragment>
+    
   );
 }
 
