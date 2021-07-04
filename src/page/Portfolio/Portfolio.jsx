@@ -1,16 +1,17 @@
 import React from 'react'
 import Navbar from '../../components/Navbar';
 import Header from '../../components/Header';
-import Skills from '../../components/Skills';
 import GridContainer from '../../containers/GridContainer';
 
-export default function Home() {
+
+function Portfolio() {
     return (
         <GridContainer>
             <Navbar />
             <Header />
-            <Skills />
-            <h1>Home</h1>
+            <h1>Portfolio</h1>
         </GridContainer>
     )
 }
+
+export default Portfolio

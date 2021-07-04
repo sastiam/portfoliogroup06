@@ -1,6 +1,6 @@
 import Home from '../page/Home';
 import About from '../page/About';
-import Projects from '../page/Projects';
+import Portfolio from '../page/Portfolio';
 
 
 const configRouting = [
@@ -15,9 +15,9 @@ const configRouting = [
         page: About
     },
     {
-        path: '/projects',
+        path: '/portfolio',
         exact: true,
-        page: Projects
+        page: Portfolio
     }
 ]
 
